@@ -30,8 +30,12 @@
     padding: 10px 20px;
     background: #000;
     border-top: 2px solid #33ff33;
-    gap: 20px;
     height: 110px;
+  }
+  #moveButtons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
   }
   .ctrl-btn {
     background: transparent;
@@ -82,9 +86,11 @@
 <body>
 <canvas id="gameCanvas"></canvas>
 <div id="controls">
-  <button class="ctrl-btn" id="leftBtn">&#9664;</button>
+  <div id="moveButtons">
+    <button class="ctrl-btn" id="leftBtn">&#9664;</button>
+    <button class="ctrl-btn" id="rightBtn">&#9654;</button>
+  </div>
   <button id="fireBtn">FIRE</button>
-  <button class="ctrl-btn" id="rightBtn">&#9654;</button>
 </div>
 
 <script>
